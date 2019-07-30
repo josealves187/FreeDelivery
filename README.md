@@ -1,9 +1,7 @@
 # FreeDelivery
 Aplicativo de Entrega
 
-# <p>Esse aplicativo e similia ao iFood,, Rappi. Contudo o Free delivery é um serviço de
-entrega de diferentes produtos. O sistema não oferece uma plataforma onde o usuário possa
-fazer compras, apenas abona um serviço que os supermercados já utilizam que são entregas de
+## <p>Esse aplicativo e similia ao iFood,, Rappi. Contudo o Free delivery é um serviço de entrega de diferentes produtos. O sistema não oferece uma plataforma onde o usuário possa fazer compras, apenas abona um serviço que os supermercados já utilizam que são entregas de
 mercadoria.
 
 ###  **_Tela Menu Admin  ->    Tela Admin add new funcionario ->    Tela admin add new Produtos_ **   
