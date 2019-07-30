@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.LoginActivity">
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:background="@drawable/bg31"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:src="#000000" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_marginTop="100dp"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                app:srcCompat="@drawable/ic_android_black_24dp"
+                />
+
+            <EditText
+
+                android:id="@+id/editEmailLog"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/gradienteditext"
+                android:drawableLeft="@drawable/ic_admin_login"
+                android:drawablePadding="10dp"
+                android:drawableTint="#fff"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#fff"
+                android:ems="10"
+                android:hint="Email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                android:drawableStart="@drawable/ic_admin_login" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:id="@+id/editrPassowodLog"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/gradienteditext"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#fff"
+                    android:textColorHint="#fff"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Senha"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints,UnusedAttribute"
+                    android:drawableStart="@drawable/ic_password" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/EqueciMinhaSe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#EDF0F1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Não sei minha senha!"/>
+
+            <Button
+                android:id="@+id/btnLoginLog"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/gradienteditext"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Login"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                />
+
+
+            <!--android:drawableRight="@drawable/ic_attach_money_black_24dp"-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btnCancelaLog"-->
+            <!--android:layout_width="215dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/gradienteditext"-->
+            <!--android:drawableRight="@drawable/ic_attach_money_black_24dp"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:text="@string/cancelar"-->
+            <!--android:textColor="#fff"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="1.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--tools:ignore="MissingConstraints" />-->
+
+
+
+            <TextView
+                android:id="@+id/btnCadastraLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textColor="#F0F3F5"
+                android:textStyle="bold"
+                android:text="E novo aqui? Criar uma conta " />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+

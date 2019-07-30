@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jose.freedelivery2">
+    <!-- Permissoes internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissoes galeria / camera -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Telas_Oferta.Exibir_Oferta"
+            android:parentActivityName=".UsuarioComu.MainActivity">
+        </activity>
+        <activity
+            android:name=".Telas_Oferta.Add_Oferta_Activity"
+            android:parentActivityName=".TelaAdm.TelaAdmActivity"></activity>
+        <activity
+            android:name=".Telas_Oferta.Exibi_Oferta_Activity"
+            android:parentActivityName=".TelaAdm.TelaAdmActivity" />
+        <activity android:name=".Helper.SobreActivity" />
+        <activity
+            android:name=".SettingPending.PendingAdmin"
+            android:parentActivityName=".TelaAdm.TelaAdmActivity" />
+        <activity
+            android:name=".Update.SignUpActivity"
+            android:parentActivityName=".UsuarioComu.MainActivity" />
+        <activity android:name=".Dados.CommitmentActivity" />
+        <activity
+            android:name=".Dados.ExibirAddressActivity"
+            android:parentActivityName=".Funcionarios.OpCActivity" />
+        <activity
+            android:name=".Dados.DadosUsuarioActivity"
+            android:parentActivityName=".UsuarioComu.MainActivity" />
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingPending.ConfigurationEntregadorActivity"
+            android:parentActivityName=".Funcionarios.EntregadorActivity" />
+        <activity
+            android:name=".Registration.UserAddress"
+            android:parentActivityName=".UsuarioComu.MainActivity" />
+        <activity
+            android:name=".SettingPending.SettingOpCAixa"
+            android:parentActivityName=".Funcionarios.OpCActivity" />
+        <activity android:name=".Funcionarios.OpCActivity" />
+        <activity android:name=".Funcionarios.EntregadorActivity" />
+        <activity
+            android:name=".Registration.RegisteUsuarioActivity"
+            android:parentActivityName=".Login.LoginActivity" />
+        <activity android:name=".TelaAdm.TelaAdmActivity" />
+        <activity
+            android:name=".Registration.RegisterActivity"
+            android:parentActivityName=".TelaAdm.TelaAdmActivity" />
+        <activity
+            android:name=".UsuarioComu.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

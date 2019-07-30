@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/nav_home"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="@string/menu_home" />-->
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_Endereco"
+            android:icon="@drawable/ic_add_location_24dp"
+            android:title="@string/menu_gallery" />
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/iconfinder_cart"
+            android:title="@string/menu_tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_contacts_24px"
+                android:title="Contatos" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_information"
+                android:title="Sobre" />
+
+            <item
+                android:id="@+id/Desconectar"
+                android:icon="@drawable/ic_icon_off"
+                android:title="Desconectar" />
+
+        </menu>
+
+
+    </item>
+
+</menu>
